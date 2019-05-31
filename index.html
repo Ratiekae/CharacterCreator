@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Character Creator</title>
+    <title>Game</title>
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      Create A Character
-    </header>
+    <div class="header">
+      <header>A Game</header>
+      <p>You need to play.</p>
+    </div>
+
+    <div class="start-screen">
+      <h1 id="create-title">Create Your Character</h1>
+      <div class="build">
+        <label id="name-label">Enter Your Character's Name:</label>
+        <input id="name" />
+        <p>
+          <label id="race-label" class="choices">Race</label>
+          <select id="races" class="choices">
+            <option value="human">Human</option>
+            <option value="dwarf">Dwarf</option>
+            <option value="elf">Elf</option>
+            <option value="half-elf">Half-Elf</option>
+            <option value="orc">Orc</option>
+          </select>
+        </p>
+        <p>
+          <label id="class-label" class="choices">Class</label>
+          <select id="classes" class="choices">
+            <option value="warrior">Warrior</option>
+            <option value="mage">Mage</option>
+            <option value="archer">Archer</option>
+            <option value="thief">Thief</option>
+            <option value="healer">Healer</option>
+          </select>
+        </p>
+        <p>
+          <label id="level-label" class="choices">Starting Level</label>
+          <select id="level" class="choices">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </p>
+        <p>
+          <label id="start-label" class="choices">Hometown</label>
+          <select id="start-area" class="choices">
+            <option value="coast">Brightharbor</option>
+            <option value="plain">Plains</option>
+            <option value="mountain">Mountain</option>
+            <option value="forest">Forest</option>
+            <option value="desert">Desert</option>
+            <option value="hills">Hills</option>
+            <option value="island">Island</option>
+          </select>
+        </p>
+        <p>
+          <label id="law-label" class="choices">Alignment: Lawfulness</label>
+          <select id="law-alignment" class="choices">
+            <option value="lawful">Lawful</option>
+            <option value="neutral">Neutral</option>
+            <option value="chaotic">Chaotic</option>
+            <option value="none">No Alignment</option>
+          </select>
+        </p>
+        <p>
+          <label id="good-label" class="choices">Alignment: Goodness</label>
+          <select id="good-alignment" class="choices">
+            <option value="good">Good</option>
+            <option value="neutral">Neutral</option>
+            <option value="evil">Evil</option>
+            <option value="none">No Alignment</option>
+          </select>
+        </p>
+        <button id="finalize-char">Finish</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
