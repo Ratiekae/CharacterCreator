@@ -1,3 +1,6 @@
+const startScreen = document.getElementById("startScreen");
+const characterScreen = document.getElementById("charScreen");
+
 var playerChar = {
   name: "",
   race: "",
@@ -25,10 +28,13 @@ function characterCreate() {
   playerChar.lawfulness = lawAlign_id;
   playerChar.goodness = goodAlign_id;
   console.log(playerChar);
+  characterScreen.style.display = "block";
+  startScreen.style.display = "none";
 }
 
 function main() {
   console.log("main works!");
+  characterScreen.style.display = "none";
 }
 
 main();
