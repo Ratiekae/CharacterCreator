@@ -1,1 +1,3 @@
 # CharacterCreator
+
+Another learning project
