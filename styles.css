@@ -27,3 +27,7 @@ p {
 .choices {
   margin: 5px 5px;
 }
+
+#charLabel {
+  padding: 25px 25px;
+}
