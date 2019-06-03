@@ -1,6 +1,9 @@
 const startScreen = document.getElementById("startScreen");
 const characterScreen = document.getElementById("charScreen");
 
+const backgroundScreen = document.getElementById("bgScreen");
+const detailScreen = document.getElementById("char-display");
+
 const nameChar = document.getElementById("name-char");
 const raceChar = document.getElementById("race-char");
 const classChar = document.getElementById("class-char");
@@ -20,6 +23,11 @@ var playerChar = {
   lawfulness: "",
   goodness: ""
 };
+
+finalizeChar(){
+  backgroundScreen.style.display = "block";
+
+}
 
 function characterCreate() {
   
@@ -59,6 +67,8 @@ function generateCharSheet (){
 function main() {
   console.log("main works!");
   characterScreen.style.display = "none";
+  backgroundScreen.style.display = "none";
+  detailScreen.style.display = "none";
 }
 
 main();
