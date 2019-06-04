@@ -31,3 +31,7 @@ p {
 #charLabel {
   padding: 25px 25px;
 }
+
+.char-display {
+  font-size: 20px;
+}
